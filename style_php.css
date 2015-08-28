@@ -1,0 +1,29 @@
+body {
+		width: 100vw;
+		height: 100vh;
+		margin: 0 0;
+		background-image: url(../images/background_czb_2.jpg);
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
+
+	p {
+		display: inline-block;
+		color: #7c0042;
+		font-family: 'Josefin Sans', 'verdana', sans-serif;
+		font-size: 30px;
+		font-weight: 300;
+		text-align: center;
+		text-transform: uppercase;
+		line-height: 200%;
+		position: absolute;
+		margin: 10% auto 0 10%;
+		
+	}
+	p a {
+		text-transform: uppercase;
+		color: grey;
+	}
+	p a:hover {
+		color: #7c0042;
+	
