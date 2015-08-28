@@ -1,0 +1,2037 @@
+/*
+Layouts and backgrounds
+.wrapper background: ../images/background_czb_2.jpg; 
+#main image max 343x250px
+header background: ../images/logo_duze_granat_S.png; max 196x143px
+footer background: ../images/logo_czb_footer.png; max 41x30px
+color grey: #595758; #3d3d3d;
+color cherry: #7c0042; rgb(103, 0, 50);
+color blue: #122043;
+footer background: #fdfdfd;
+font-family: 'Josefin Sans', sans-serif;
+*/
+
+html, body {
+	height: 100%;
+	font-family: 'Josefin Sans', 'verdana', sans-serif;
+	font-size: 15px;
+	color: #3d3d3d;
+	font-weight: 300;
+	background-color: rgb(251, 251, 251);	
+}
+
+
+li:focus {
+	outline: none;
+	}
+
+a:focus {
+	outline: none;
+	}
+
+/*________the smallest devices: orientation: portrait_________*/
+
+
+	
+/*________________LANDING PAGE_______________*/
+
+	.wrapper {  /*landing and second page*/
+		width: 100%;
+		height: 95%;
+		position: relative;
+		background-image: url(../images/background_czb_2.jpg);
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
+
+	#main { /*section, landing page*/
+		position: relative;
+		height: auto;
+		width: 60%;
+		top: 50%;
+		left: 50%;
+
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		-o-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+	}
+
+	#main #logo_L img {
+		width: 100%;
+		height: 100%;
+	}
+	
+	#main #logo_L img:hover,
+	#flex-container #home:hover,
+	#flex-container .two-dots:hover,
+	#nawi:hover,
+	#back:hover {
+		opacity: 0.8;
+	}
+
+	#main p {
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 0.9em;
+		padding-top: 1em;
+	}
+	
+	#main a {
+		display: block;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 1.1em;
+		padding-top: 0.3em;
+		color: #3d3d3d;
+	}
+
+	#main a:hover,
+	#main a:active {
+		color: #7c0042;
+	}
+
+	.wrapper #line-small {
+		position: absolute;
+		top: 40%;
+		right: 0.5%;
+		height: 30%;
+		min-height: 5px;
+		width: 1px;
+		background-image: url(../images/arrow.svg);
+		background-repeat: no-repeat;
+		background-size: 100% auto;
+	}
+	
+	#foot {  /*landing and second page*/
+		width: 100%;
+		height: 5%;
+		text-align: center;
+		background-color: #fdfdfd;
+		position: relative;
+	}
+	
+	#foot p {
+		display: inline-block;
+		text-transform: uppercase;
+		font-size: 0.5em;
+		top: 50%;
+
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		-o-transform: translateY(-50%);
+		transform: translateY(-50%);
+	}
+
+	#foot a {
+		display: inline-block;
+		position: relative;
+		height: 100%;
+		width: auto;
+
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		
+		padding: 0.2em 0.2em;
+	}
+
+	#foot img {
+		display: inline-block;
+		position: relative;
+		height: 100%;
+		width: auto;
+		padding-left: 0.5em;
+	}
+
+
+	/*________________SECOND PAGE_______________*/
+
+	#nav-tabs{
+		position: relative;
+		display: block;
+		width: 100%;
+		height: 100%;
+		display: none;
+	}
+
+	#flex-container {
+		width: 100%;
+		height: 100%;
+
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+
+		-webkit-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		
+		-webkit-justify-content: space-around;
+		-ms-justify-content: space-around;
+		justify-content: space-around;
+		align-content: space-around;
+		align-items: center;
+
+		display: none;	
+	}
+
+	.grey {
+		width: 16vw;
+		height: 16vw;
+		
+		-webkit-border-radius: 50%;
+		border-radius: 50%;
+		
+		background-color: rgba(200, 200, 200, 0.9);
+		margin: 0.5em;
+		position: relative;	
+	}
+
+	#flex-container li a {
+		display: block;
+		height: 100%;
+		width: 100%;
+		
+		-webkit-border-radius: 50%;
+		border-radius: 50%;
+
+		text-align: center;
+		text-transform: uppercase;
+		color: white;
+		font-size: 0.7em;		
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		padding-top: 7vw;
+	}
+
+	#flex-container li #portfolio {
+		font-size: 0.6em;
+	}
+
+	#home,
+	.two-dots {
+		display: block;
+		width: 16vw;
+		height: 16vw;
+		
+		-webkit-border-radius: 50%;
+		border-radius: 50%;
+
+		background-color: #7c0042;
+		margin: 0.5em;
+		position: relative;
+	}
+
+	/*________________THIRD PAGE_______________*/
+
+	.blanc { /*zawsze przy tym @media*/
+		display: none;
+	}
+
+	#main-dot #tab-1 { /*zawsze przy tym @media*/
+		display: none;
+	}
+	
+	header {
+		width: 100%;
+		height: 15%;
+		position: relative;
+
+		display: none;
+	}
+
+	header #back {
+		position: absolute;
+		display: block;
+		height: 100%;
+		 
+	}
+
+	header #back img {
+		position: absolute;
+		height: 100%;
+		width: auto;
+		top: 0;
+		left: 0;
+		margin: 1em 1em 0 1em;
+
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		z-index:1;	
+	}	
+	
+	#nawi {
+		display: block;
+		width: 12vw;
+		height: 12vw;
+
+		-webkit-border-radius: 50%;
+		border-radius: 50%;
+
+		background-color: #7c0042;
+		position: absolute;
+		top: 0;
+		right: 0;
+		margin: 1.3em;
+		display: none;
+	}
+
+	#nawi-back {
+		display: block;
+		float: right;
+		height: 100%;
+		width: 100%;
+
+		-webkit-border-radius: 50%;
+		border-radius: 50%;
+
+		text-align: center;
+		text-transform: uppercase;
+		color: white;
+		font-size: 0.7em;
+
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		
+		padding-top: 5vw;
+		display: none;
+	}
+
+	#main-dot{
+		position: relative;
+		width: 90%;
+		height: 75%;
+		margin: 1em auto;
+		display: none;
+	}
+
+	#main-dot .nav-dot{
+		padding-bottom: 1em;
+	}
+	#main-dot .nav-dot,
+	#main-dot .nav-dot p {
+		height: auto;
+		width: 100%;
+		color: #797979;
+		text-align: justify;
+		font-size: 1.1em;
+		line-height: 1.3em;
+		padding-top: 1em;
+	}
+
+	#main-dot .nav-dot span {
+		display: block;
+    	text-transform: uppercase;
+    	width: 100%;
+    	color: #797979;
+    	font-size: 1.1em;
+    	font-weight: 300;
+    	padding-bottom: 0.3em;
+    	margin:1em auto 1em auto;
+    	text-align: center;
+    	border-bottom: 1px solid #7c0042;
+	}
+
+	/*-------------ABOUT-------------*/
+	#main-dot #tab-2 p a {
+		color: #7c0042;
+	}
+
+	.inline-svg {
+		display: block;
+		width: 100%;
+		height: 5vh; /*height + padding-top=10vh - tyle ile pozostałe ikony mają wysokości. Dzięki temu tekst jest w środku ikony*/
+		padding-left: 17vw;
+		padding-top: 3vw;
+		margin: 2vh 0 0 2vw;
+		font-size: 1em;
+		color: #797979;
+		background-size: auto 100%;
+		background-repeat: no-repeat;
+	}
+
+	/*------------CV-----------*/
+	#tab-3 .inline-svg {
+		display: block;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		width: 100%;
+		height: 8vh; /*height + padding-top=10vh - tyle ile pozostałe ikony mają wysokości. Dzięki temu tekst jest w środku ikony*/
+		padding: 2vh 1vw 1vh 12vw;
+		margin: 0;
+		margin-top: 2vh;
+		font-size: 1em;
+		color: #797979;
+		background-size: auto 100%;
+		background-repeat: no-repeat;
+	}
+
+	#main-dot #tab-3 .html {
+		background-image: url(../images/html5-01.svg);
+	}
+
+	#main-dot #tab-3 .css {
+		background-image: url(../images/css3-01.svg);
+	}
+
+	#main-dot #tab-3 .js {
+		background-image: url(../images/prog-js01.svg);
+	}
+
+	#main-dot #tab-3 .jquery {
+		background-image: url(../images/prog-jquery.svg);
+	}
+
+	#main-dot #tab-3 .rwd {
+		background-image: url(../images/responsive-design.svg);
+	}
+
+	#main-dot #tab-3 .ps {
+		background-image: url(../images/Adobe_Photoshop_CS6_icon.svg);
+	}
+
+	#main-dot #tab-3 .bootstrap {
+		background-image: url(../images/rus-vk-01.svg);
+	}
+
+	#main-dot #tab-3 .joomla {
+		background-image: url(../images/prog-joomla.svg);
+	}	
+
+	#main-dot #tab-3 p {
+		padding-bottom: 1em;
+		font-size: 1em;
+		line-height: 1.6em;
+		text-align: center;
+	}
+
+	#tab-3 p a {
+		color: #7c0042;
+		text-decoration: underline;
+	}
+
+	#tab-3 p a:visited {
+		color: #7c0042;
+	}
+	
+	#tab-3 ul {
+		padding-bottom: 1em;
+	}
+
+	#tab-3 ul li {
+		text-indent: 1em;
+		text-align: left;
+		line-height: 1.3em;
+	}
+
+	/*-----------PORTFOLIO & CONTACT----------*/
+	.contact-1st {
+		background-image: url(../images/mail.svg);
+	} 
+
+	.contact-2nd {
+		background-image: url(../images/phone.svg);
+	} 
+
+	.contact-3rd {
+		background-image: url(../images/linkedin.svg);
+	} 
+
+	#main-dot #tab-4 .contact-4th,
+	#main-dot #tab-5 .contact-4th {
+		background-image: url(../images/github.svg);
+	} 
+
+	#main-dot #tab-4 .contact-5th,
+	#main-dot #tab-5 .contact-5th {
+		background-image: url(../images/codepen.svg);
+	}
+
+	.contact-3rd,
+	.contact-4th,
+	.contact-5th {
+		background-size: auto 100%;
+		background-repeat: no-repeat;
+		display: block;
+		width: 10.5vw;
+		height: 10vw;
+		margin: 5vh 8vw 5vh 5vw;
+		float: left;
+	}
+
+	/*--------PORTFOLIO---------*/
+	#tab-4 a {
+		color: #7c0042;
+		font-size: 1em;
+		text-transform: uppercase;
+	}
+
+	#tab-4 a:visited {
+		color:7c0042;
+	}
+
+	#tab-4 .contact-4th,
+	#tab-4 .contact-5th {
+		float: none;
+		/*width: 15vw;*/
+		width: auto;
+		height: auto;
+		font-size: 1em;
+		padding: 14vh 2vw 0vh 2vw;
+		position: relative;
+		margin: 5vh 5vw;
+		display: inline-block;
+		background-size: 80% auto;
+	}
+
+	#main-dot #tab-4 .contact-4th {
+		margin: 6vh auto 0 8vw;
+		float: left;
+	}
+
+	#main-dot #tab-4 .contact-5th {
+		margin: 6vh 8vw 0 auto;
+		float: right;
+	}
+
+	/*---------CONTACT-----------*/
+	
+	#tab-5 ul .contact-2nd a {
+		color: #797979;
+	}
+
+	#tab-5 ul {
+		overflow: hidden;
+	}
+
+	#tab-5 ul li {
+		display: inline-block;
+	}
+
+	.contact-form {
+		width: 90%;
+		padding: 4%;
+		background: #fff;
+		margin: 0 auto;
+	}
+
+	.contact-form h3 {
+    	display: block;
+    	text-transform: uppercase;
+    	width: 100%;
+    	color: #797979;
+    	font-size: 1.1em;
+    	font-weight: 300;
+    	padding-bottom: 0.5em;
+    	margin-bottom: 1em;
+    	text-align: center;
+    	border-bottom: 1px solid #7c0042;
+	}
+
+	.contact-form .group {
+		position: relative;
+		display: block;
+		padding: 0.3em 0;
+		margin-bottom: 0.3em;
+	}
+
+	.contact-form #mail,
+	.contact-form textarea {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		outline: none;
+		display: block;
+		width: 100%;
+		height: 2em;
+		padding: 0.2em;
+		border: none;
+		border-bottom: 1px solid #ddd;
+		background: transparent;
+		font-size: 1em;
+		font-family: 'Josefin Sans', sans-serif;
+		font-weight: 300;
+		line-height: 1.1em;
+	}
+
+	.contact-form textarea {
+		resize: none;
+		height: 5em;
+	}
+
+	.bar {
+		position:relative;
+		display:block;
+		width:100%;
+	}
+
+	.bar:before,
+	.bar:after {
+  		content:'';
+  		height: 3px; 
+  		width: 0px;
+  		bottom: -1px; 
+  		position: absolute;
+  		background: #7c0042;
+  		-webkit-transition: 0.2s ease all;
+  		-moz-transition: 0.2s ease all;
+  		transition: 0.2s ease all;
+	}
+
+	.bar:before {
+	  left: 50%;
+	}
+
+	.bar:after {
+	  right: 50%; 
+	}
+
+	input:focus ~ .bar:before,
+	input:focus ~ .bar:after,
+	textarea:focus ~ .bar:before,
+	textarea:focus ~ .bar:after {
+		width:50%;
+	}
+
+	.contact-form button {
+		-webkit-box-shadow: inset 0 1px 0 0 #5e2d48;
+		box-shadow: inset 0 1px 0 0 #5e2d48;
+		background-color: #7c0042;
+		border: 1px solid #553144;
+		display: block;
+		width: 60%;
+		cursor: pointer;
+		font-family: 'Josefin Sans', sans-serif;
+		font-weight: 300;
+		color: #fff;
+		font-size: 0.9em;
+		text-decoration: none;
+		text-transform: uppercase;
+		margin: 1em auto;
+		padding: 0.7em 1.2em;
+		border-radius: 3px;
+		
+	}
+
+
+	/*________________________________________________________*/
+
+	/*orientation: portrait*/
+
+@media (orientation:portrait) and (min-height: 700px) and (min-width: 500px){
+	#main a {
+		font-size: 1.2em;
+	}
+
+	#flex-container li a,
+	#flex-container li #portfolio,
+	#nawi-back {
+		font-size: 0.9em;
+	}
+
+	#main-dot #tab-3 p {
+		font-size: 1.2em;
+		text-align: center;
+	}
+
+	#main-dot #tab-4 {
+		width: 80%;
+		position: relative;
+		margin: 0 auto;
+	}
+
+	#main-dot #tab-5 .inline-svg {
+		font-size: 1.2em;
+	}
+
+	#foot p {
+		font-size: 0.7em;
+	}
+	#foot img {
+		height: 80%;
+	}
+
+	#main-dot #tab-2 {
+		width: 80%;
+		margin: 0 auto;
+	}
+}
+
+	/*________________________________________________________*/
+
+	/*orientation: portrait, layout z jedną #main-dot*/
+
+@media (orientation:portrait) and (min-height: 1000px) and (min-width: 700px){
+		
+	#main p {
+		font-size: 1em;
+	}
+	
+	#main h1 a {
+		font-size: 1.3em;
+	}
+	#foot p {
+		font-size: 0.7em;
+	}
+	#foot img {
+		height: 90%;
+		width: auto;
+	}
+	header,
+	#back,
+	#back img,
+	#nav-tabs,
+	.two-dots,
+	#main-dot,
+	.nav-dot {
+		display: none;
+	}
+	.grey,
+	.blanc,
+	#home,
+	header #nawi,
+	header #nawi-back { 
+		display: none; /*zawsze dla tejwielkości*/
+	}
+	header {
+		height: 15%;
+		width: auto;
+	}
+	header #back {
+		display: block;
+		height: 100%;
+	}
+	header img {
+		height: 100%;
+	}
+	#nav-tabs {
+		position: relative;
+		width: 100%;
+		height: 80%;
+	}
+	
+	#flex-container {
+		position: absolute;
+		
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		
+		height: 16vw;
+		bottom: 0;
+		z-index: 1;
+	}
+	#main-dot {
+		width: 80vw;
+		height: 80vw;
+		border-radius: 50%;
+		position: absolute;
+		left: 50%;
+		
+		-webkit-transform: translateX(-50%);
+		-ms-transform: translateX(-50%);
+		-o-transform: translateX(-50%);
+		transform: translateX(-50%);
+		
+		bottom: 25vw;
+		background-color: #7c0042;
+	}
+	#main-dot #tab-1 {
+		display: block;
+		position: relative;
+		height: 2em;
+		color: white;
+		font-size: 2em;
+		text-transform: uppercase;
+		text-align: center;
+		line-height: 2em;
+		top: 45%;	
+	}
+	#flex-container .two-dots {
+		font-size: 1.3em;
+		font-weight: 300;
+	}
+	#back img {
+		top: 0;
+		left: 0;
+		
+		-webkit-transform: translateX(0);
+		-ms-transform: translateX(0);
+		-o-transform: translateX(0);
+		transform: translateX(0);
+	}
+	.activetab {
+		background-color: #122043;
+	}
+	.visibletext {
+		display: block !important;
+	}
+	#main-dot .nav-dot {
+		width: 65vw;
+		height: auto;
+		position: relative;
+		left: 50%;
+		top: 50%;
+		-webkit-transform: translate(-50%, -50);
+		-ms-transform: translate(-50%, -50%);
+		-o-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		
+		color: white;
+		text-align: center;
+		text-align: justify;
+		font-size: 1.2em;
+		font-weight: 300;
+		line-height: 1.3em;
+	}
+	#main-dot .nav-dot span {
+    	width: 70%;
+    	color: #fff;
+    	border-bottom: 1px solid #122043;
+	}
+	
+	/*--------ABOUT & CV----------*/
+	#main-dot #tab-2,
+	#main-dot #tab-3 {
+		width: 70vw;
+		height: 70vw;
+		position: relative;
+		padding-top: 2vh;
+		color: #fff;
+		font-size: 1em;
+		line-height: 1.2em;
+	}
+
+	/*---------ABOUT-----------*/
+	#main-dot #tab-2 {
+		width: 70%;
+		margin: 0;
+		margin: 0 auto;
+		padding-top: 20%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	#main-dot #tab-2 p{
+		font-size: 0.9em;
+		line-height: 1.5em;
+		color: #fff;
+	}
+
+	#main-dot #tab-2 span {
+		margin-bottom: 0;
+	}
+
+	#main-dot #tab-2 p a {
+		color: #fff;
+		text-decoration: underline;
+	}
+
+	#main-dot #tab-2 p a:hover {
+		color: #122043;
+	}
+
+	/*---------CV-------*/
+
+	#main-dot #tab-3 p:nth-of-type(2) {
+		display: none; /*"co umiem"-out*/
+	}
+	#main-dot #tab-3 ul {
+		display: inline-block;
+		position: relative;
+		left: 35%;
+	}
+
+	#tab-3 .inline-svg {
+		display: block;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		width: auto;
+		height: 3vh; /*height + padding-top=10vh - tyle ile pozostałe ikony mają wysokości. Dzięki temu tekst jest w środku ikony*/
+		color: #fff;
+		padding: 0.5vh 1vw 0vh 4vw;
+		margin: 0;
+		margin-bottom: 0.7vh;
+		font-size: 1em;
+		color: #fff;
+		background-size: auto 100%;
+		background-repeat: no-repeat;
+	}
+
+	#main-dot #tab-3 .html {
+		background-image: url(../images/html5-01_white.svg);
+	}
+
+	#main-dot #tab-3 .css {
+		background-image: url(../images/css3-01_white.svg);
+	}
+
+	#main-dot #tab-3 .js {
+		background-image: url(../images/prog-js01_white.svg);
+	}
+
+	#main-dot #tab-3 .jquery {
+		background-image: url(../images/prog-jquery_white.svg);
+	}
+
+	#main-dot #tab-3 .rwd {
+		background-image: url(../images/responsive-design_white.svg);
+	}
+
+	#main-dot #tab-3 .ps {
+		background-image: url(../images/Adobe_Photoshop_CS6_icon_white.svg);
+	}
+
+	#main-dot #tab-3 .bootstrap {
+		background-image: url(../images/rus-vk-01_white.svg);
+	}
+
+	#main-dot #tab-3 .joomla {
+		background-image: url(../images/prog-joomla_white.svg);
+	}	
+
+	#main-dot #tab-3 p {
+		padding-bottom: 1em;
+		font-size: 1.2em;
+		font-weight: 300;
+		line-height: 1.4em;
+		color: #fff;
+		text-align: center;
+		margin: 0;
+	}
+
+	#main-dot #tab-3 p a {
+		color: #fff;
+		text-decoration: underline;
+		font-weight: 300;
+	}
+
+	#main-dot #tab-3 p a:visited {
+		color: #fff;
+	}
+
+	#main-dot #tab-3 p a:hover {
+    	
+    	color: #122043;
+	}
+
+	#main-dot #tab-3 span {
+		margin-bottom: 0;
+		font-weight: 300;
+	}
+	
+	/*-------PORTFOLIO--------*/
+	#main-dot #tab-4 {
+		width: 65vw;
+		height: 65vw;
+		position: relative;
+		padding-top: 2vh;
+	}
+
+	#main-dot #tab-4 p {
+		width: 85%;
+		font-size: 1em;
+		line-height: 1.2em;
+		color: #fff;
+		position: relative;
+		margin: 0 auto;
+	}
+
+	#main-dot #tab-4 a {
+		color: #fff;
+		text-decoration: underline;
+	}
+
+	#main-dot #tab-4 a:hover {
+		color: #122043;
+	}
+
+	#main-dot #tab-4 a:visited {
+		color: #fff;
+	}
+	
+
+/*--------------------CONTACT----------*/
+	#main-dot #tab-5 {
+		width: 65vw;
+		height: 65vw;
+		position: relative;
+		padding-top: 2vh;
+		left: 50%;
+		top: 45%;
+		-webkit-transform: translateY(-50%, -4%);
+		-ms-transform: translate(-50%, -45%);
+		-o-transform: translate(-50%, -45%);
+		transform: translate(-50%, -45%);
+		
+		color: white;
+		font-size: 1em;
+		font-weight: 300;
+		line-height: 1.2em;
+	}
+
+	#tab-5 ul {
+		display: block;
+		width: 70%;
+		overflow: hidden;
+		margin: 0 auto;
+	}
+
+	#tab-5 ul .inline-svg {
+		height: 3vh; /*height + paddingtop=10vh - tyle ile 	pozostałeikony mają wysokości. Dzięki temutekst jest w środku ikony*/
+		padding: 1vh 0 0 7vw;
+		margin: 1vh 0 1vh 2vw;
+		font-size: 1.1em;
+		color: #fff;
+	}
+
+	#tab-5 ul .contact-2nd a {
+		color: #fff;
+	}
+
+	#tab-5 ul li .contact-3rd,
+	#tab-5 ul li .contact-4th,
+	#tab-5 ul li .contact-5th {
+		width: 5vw;
+		height: 5vw;
+		margin: 1vh 3vw 2vh 2vw;
+	}
+
+	#main-dot #tab-5 .contact-1st {
+		background-image: url(../images/mail_white.svg);
+	} 
+
+	#main-dot #tab-5 .contact-2nd {
+		background-image: url(../images/phone_white.svg);
+	} 
+
+	#main-dot #tab-5 .contact-3rd {
+		background-image: url(../images/linkedin_white.svg);
+	} 
+
+	#main-dot #tab-4 .contact-4th,
+	#main-dot #tab-5 .contact-4th {
+		background-image: url(../images/github_white.svg);
+	} 
+
+	#main-dot #tab-4 .contact-5th,
+	#main-dot #tab-5 .contact-5th {
+		background-image: url(../images/codepen_white.svg);
+	}
+
+	#tab-5 .contact-form {
+		display: block;
+		width: 70%;
+		padding: 4%;
+		background: transparent;
+		margin: 0 auto;
+	}
+
+	.contact-form h3 {
+    	color: #fff;
+    	font-size: 1.2em;
+    	padding-bottom: 0.5em;
+    	margin-bottom: 1em;
+    	border-bottom: 1px solid #122043;
+	}
+
+	.contact-form .group {
+		position: relative;
+		display: block;
+		padding: 0.3em 0;
+		margin-bottom: 0.3em;
+	}
+
+	.contact-form #mail,
+	.contact-form textarea {
+		color: #fff;
+	}
+	.bar:before,
+	.bar:after {
+  		content:'';
+  		position: absolute;
+  		background: #122043;
+  		-webkit-transition: 0.3s ease all;
+  		-moz-transition: 0.3s ease all;
+  		transition: 0.3s ease all;
+	}
+	.contact-form button {
+		background-color: #122043;
+		color: #fff;
+		width: 50%;
+	}
+	/*---------------------*/
+	#foot img {
+		height: 70%
+	}
+}
+/*_________________________________________________________*/
+
+@media (orientation: portrait) and (min-width: 900px) and (min-height: 1000px){
+
+	#main h1 {
+		font-size: 1.5em;
+	}
+
+	#main p {
+		font-size: 1.3em;
+	}
+
+	#main-dot {
+		bottom: 20vw;
+	}
+
+	#main-dot .nav-dot {
+		width: 60vw;
+	}
+
+	#flex-container .two-dots a {
+		font-size: 1.2em;
+	}
+
+	.wrapper {
+		height: 96%;
+	}
+
+	#foot {
+		height: 4%;
+	}
+
+	#foot p {
+		font-size: 0.9em;
+	}
+}
+
+/*_________________________________________________________*/
+
+@media (orientation:landscape) { 
+
+	.wrapper {  /*landing and second page*/
+		position: relative;
+		height: 92%;
+	}
+
+	.wrapper #line-small {
+		position: absolute;
+		top: 40%;
+		right: 0.5%;
+		height: 30%;
+		min-height: 5px;
+		
+		width: 1px;
+		background-image: url(../images/arrow.svg);
+		background-repeat: no-repeat;
+		background-size: 100% auto;
+	}
+
+	#main { /*section, landing page*/
+		width: 40%;
+	}
+
+	header {
+		height: 20%;
+	}
+
+	header #back {
+		display: block;
+		height: 100%;
+	}
+
+	header #back img {
+		position: absolute;
+		padding: 2vh 2vw 0 2vw;
+		height: 100%;
+	}
+
+	header #nawi {
+		width: 12vh;
+		height: 12vh;
+	}
+
+	header #nawi #nawi-back {
+		height: 7vh;
+		padding-top: 5vh;
+	}
+
+	#nav-tabs {
+		position: relative;
+	}
+
+	#flex-container {
+		-webkit-flex-flow: column;
+		-moz-flex-flow: column;
+		-ms-flex-flow: column;
+		-o-flex-flow: column;
+		flex-flow: column;
+
+		-webkit-flex-wrap: wrap;
+		-moz-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-o-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+
+	#flex-container li a {
+		padding-top: 7vh;
+	}
+
+	.grey {
+		width: 16vh;
+		height: 16vh;
+	}
+
+	#home,
+	.two-dots {
+		width: 16vh;
+		height: 16vh;
+	}
+
+	#main-dot {
+		width: 80%;
+	}
+
+	#nav-dot {
+		width: 100%;
+		height: 100%;
+	}
+
+	#foot {  /*landing and second page*/
+		height: 8%;	
+	}
+
+	#main-dot .nav-dot {
+		position: relative;
+		top: -15vh;
+	}
+
+	#main-dot .nav-dot span {
+		display: block;
+    	text-transform: uppercase;
+    	width: 65%;
+    	color: #797979;
+    	font-size: 1.1em;
+    	font-weight: 300;
+    	padding-bottom: 0.5em;
+    	margin:0 auto 1em auto;
+    	text-align: center;
+    	border-bottom: 1px solid #7c0042;
+	}
+	
+	/*------ABOUT & CV--------*/
+	#main-dot #tab-2,
+	#main-dot #tab-3 {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	/*--------CV-------*/
+	#main-dot #tab-3 span {
+		width: 90%;
+	}
+
+	#main-dot #tab-3 p {
+		text-align: center;
+	}
+
+	#main-dot #tab-3 .inline-svg {
+		padding-left: 5vw;
+		font-size: 0.8em;
+	}
+	
+	/*--------CONTACT--------*/
+	.contact-1st,
+	.contact-2nd {
+		display: block;
+		width: 80%;
+		height: 6vh; /*height + padding-top=10vh - tyle ile pozostałe ikony mają wysokości. Dzięki temu tekst jest w środku ikony*/
+		padding-left: 13vw;
+		padding-top: 2vw;
+		margin: 2vh 0 0 5vw;
+		font-size: 1em;
+		color: #797979;
+		background-size: auto 100%;
+		background-repeat: no-repeat;
+	}
+	
+	/*---------PORTFOLIO & CONTACT-------*/
+	.contact-3rd,
+	.contact-4th,
+	.contact-5th {
+		background-size: auto 100%;
+		background-repeat: no-repeat;
+		display: block;
+		width: 8vw;
+		height: 8vw;
+		margin: 5vh 8vw 5vh 5vw;
+		float: left;
+	}
+
+	/*--------PORTFOLIO-------*/
+	#tab-4 a {
+		color: #7c0042;
+		font-size: 1em;
+		text-transform: uppercase;
+	}
+
+	#tab-4 a:visited {
+		color:7c0042;
+	}
+
+	#tab-4 .contact-4th,
+	#tab-4 .contact-5th {
+		width: auto;
+		height: 8vh;
+		font-size: 1em;
+		padding-top: 5vh;
+		padding-left: 16vh;
+		position: relative;
+		margin: 0;
+		margin-top: 10vh;
+		display: inline-block;
+		background-size: auto 100%;
+	}
+
+	#tab-4 .contact-4th {
+		float: left;
+	}
+	
+	#tab-4 .contact-5th {
+		float: right;
+	}
+
+	/*---------CONTACT--------*/
+	
+	#main-dot ~ #tab-5{
+		width: 90%;
+		height: auto;
+		margin: 1.5em auto;
+		position: absolute;
+		top: 30%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -30%);
+		-ms-transform: translate(-50%, -30%);
+		-o-transform: translate(-50%, -30%);
+		transform: translate(-50%, -30%);
+	}
+
+	#tab-5 ul .contact-2nd a {
+		color: #797979;
+	}
+
+	#tab-5 ul {
+		overflow: hidden;
+	}
+
+	#tab-5 ul li {
+		display: inline-block;
+	}
+
+	.contact-form {
+		width: 80%;
+		padding: 4%;
+		background: #fff;
+		margin: 0 auto;
+	}
+
+	.contact-form h3 {
+    	display: block;
+    	text-transform: uppercase;
+    	width: 100%;
+    	color: #797979;
+    	font-size: 1.1em;
+    	font-weight: 300;
+    	padding-bottom: 0.5em;
+    	margin-bottom: 1em;
+    	text-align: center;
+    	border-bottom: 1px solid #7c0042;
+	}
+
+	.contact-form .group {
+		position: relative;
+		display: block;
+		padding: 0.3em 0;
+		margin-bottom: 0.3em;
+	}
+
+	.contact-form #mail,
+	.contact-form textarea {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		outline: none;
+		display: block;
+		width: 100%;
+		height: 2em;
+		padding: 0.2em;
+		border: none;
+		border-bottom: 1px solid #ddd;
+		background: transparent;
+		font-size: 1em;
+		font-family: 'Josefin Sans', sans-serif;
+		font-weight: 300;
+		line-height: 1.1em;
+	}
+
+	.contact-form textarea {
+		resize: none;
+		height: 5em;
+	}
+
+	.bar {
+		position:relative;
+		display:block;
+		width:100%;
+	}
+
+	.bar:before,
+	.bar:after {
+  		content:'';
+  		height: 3px; 
+  		width: 0px;
+  		bottom: -1px; 
+  		position: absolute;
+  		background: #7c0042;
+  		-webkit-transition: 0.2s ease all;
+  		-moz-transition: 0.2s ease all;
+  		transition: 0.2s ease all;
+	}
+
+	.contact-form button {
+		-webkit-box-shadow: inset 0 1px 0 0 #5e2d48;
+		box-shadow: inset 0 1px 0 0 #5e2d48;
+		background-color: #7c0042;
+		border: 1px solid #553144;
+		display: block;
+		width: 60%;
+		cursor: pointer;
+		font-family: 'Josefin Sans', sans-serif;
+		font-weight: 300;
+		color: #fff;
+		font-size: 0.9em;
+		text-decoration: none;
+		text-transform: uppercase;
+		margin: 1em auto;
+		padding: 0.7em 1.2em;
+		border-radius: 3px;
+		
+	}
+
+/*________________________________________________________*/
+
+	@media (orientation: landscape) and (min-width: 600px) {
+
+		#main p {
+			font-size: 0.8em;
+		}
+		
+		#main h1 a {
+			font-size: 1.2em;
+		}
+
+		.wrapper {
+			height: 95%;
+		}
+
+		#foot {
+			height: 5%;
+		}
+
+		#foot p {
+			font-size: 0.7em;
+		}
+
+		#foot img {
+			padding-left: 0.3em;
+		}
+
+		#main-dot {
+			width: 70%;
+		}
+
+		#main-dot #tab-5 ul li {
+			font-size: 1.2em;
+		}
+
+		#main-dot #tab-5 .contact-3rd,
+		#main-dot #tab-5 .contact-4th,
+		#main-dot #tab-5 .contact-5th {
+			width: 6vw;
+			height: 6vw;
+			margin: 5vh 6vw 5vh 5vw;
+		}
+
+
+	}
+/*________________________________________________________*/
+
+	@media (orientation: landscape) and (min-width: 800px)  {
+		
+		#main{
+			width: 30%;
+		}
+
+		#main h1 {
+			font-size: 1em;
+		}
+
+		#main p {
+			font-size: 0.8em;
+		}
+
+		#flex-container .two-dots a,
+		#flex-container #home a,
+		#flex-container li #portfolio, {
+			font-size: 0.9em;
+		}
+
+		#main-dot .nav-dot {
+			font-size: 1.5em;
+		}
+
+/*________________________________________________________*/
+
+ @media (orientation: landscape) and (min-width: 800px) and (min-height: 600px) {
+
+	#flex-container .two-dots a,
+	#flex-container li #portfolio,
+	#flex-container #home a,
+	#nawi #nawi-back,
+	#main p {
+		font-size: 1em;
+	}
+
+	#main h1 {
+		font-size: 1.1em;
+	}
+
+	#foot p {
+		font-size: 0.8em;
+	}
+
+	#main-dot #tab-5 {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	#main-dot #tab-5 ul li {
+		font-size: 1em;
+	}
+
+	#main-dot #tab-5 span {
+		font-size: 1.1em;
+		font-weight: 300;
+	}
+}
+
+/*________________________________________________________*/
+
+ @media (orientation: landscape) and (min-width: 900px) and (min-height: 700px) {
+	/* stąd layout z jedną #main-dot*/
+		
+	#main { /*section, landing page*/
+		width: 40%;
+	}
+
+	header,
+	#back,
+	#back img,
+	#nav-tabs,
+	.two-dots,
+	#main-dot,
+	.nav-dot {
+		display: none;
+	}
+	.grey,
+	.blanc,
+	#home,
+	header #nawi,
+	header #nawi-back { 
+		display: none; /*zawsze dla tejwielkości*/
+	}
+	#back img {
+		top: 0;
+		left: 0
+		-o-transform: translateX(0);
+		transform: translateX(0);
+		z-index: 1;
+	}
+	#nav-tabs {
+		position: relative;
+		width: 100%;
+		height: 80%;
+		font-weight: 300;
+	}
+	
+	#flex-container {
+		position: absolute;
+		
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-flex-flow: column;
+		-moz-flex-flow: column;
+		-ms-flex-flow: column;
+		-o-flex-flow: column;
+		flex-flow: column;
+		width: 16vh;
+		top: -15%;
+		right: 5%;
+		
+	}
+	#flex-container .two-dots {
+		font-size: 1.3em;
+		font-weight: 300;
+	}
+	#main-dot {
+		width: 80vh;
+		height: 80vh;
+		border-radius: 50%;
+		position: absolute;
+		top: -12%;
+		left: 15%;
+		
+		background-color: #7c0042;
+	}
+	#main-dot #tab-1 {
+		display: block;
+		position: relative;
+		height: 2em;
+		color: white;
+		font-size: 2em;
+		text-transform: uppercase;
+		text-align: center;
+		line-height: 2em;
+		top: 45%;	
+	}
+	#main-dot .nav-dot {
+		width: 100%;
+		height: 100%;
+		/*width: 75vh;
+		height: auto;*/
+		position: relative;
+		left: 50%;
+		top: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		-o-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		
+		text-align: justify;
+		font-size: 1.4em;
+		font-weight: 300;
+		line-height: 1.5em;
+	}	
+	.activetab {
+		background-color: #122043;
+	}
+	.visibletext {
+		display: block !important;
+	}
+	
+	#main-dot .nav-dot span {
+    	width: 70%;
+    	color: #fff;
+    	font-size: 1.2em;
+    	border-bottom: 1px solid #122043;
+	}
+
+	/*---------ABOUT------------*/
+
+	#main-dot #tab-2 {
+		width: 70%;
+		margin: 0;
+		margin: 0 auto;
+		padding-top: 15%;
+		color: #fff;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	#main-dot #tab-2 span {
+		margin-bottom: 0;
+	}
+
+	#main-dot #tab-2 p{
+		font-size: 0.7em;
+		line-height: 1.5em;
+		color: #fff;
+	}
+	
+	#main-dot #tab-2 p a {
+		color: #fff;
+		text-decoration: underline;
+	}
+
+	#main-dot #tab-2 p a:hover {
+		color: #122043;
+	}
+
+	/*---------CV & CONTACT------*/
+	.inline-svg {
+		display: block;
+		width: 100%;
+		height: 5vh; /*height + paddingtop=10vh - 	tyle ile pozostałe ikonymają wysokości. 	Dzięki temu tekstjest w środku ikony*/
+		padding-left: 17vw;
+		padding-top: 3vw;
+		margin: 2vh 0 0 2vw;
+		font-size: 1em;
+		color: #797979;
+		background-size: auto 100%;
+		background-repeat: no-repeat;
+	}
+
+	/*----------CV---------*/
+	#main-dot #tab-3 {
+		position: absolute;
+		padding-top: 25%;	
+	}
+
+	#main-dot #tab-3 p:nth-of-type(2) {
+		display: none; /*"co umiem"-out*/
+	}
+
+	#main-dot #tab-3 ul {
+		display: inline-block;
+		position: relative;
+		left: 30%;
+	}
+
+	#main-dot #tab-3 .inline-svg {
+		display: block;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		width: auto;
+		height: 3vh; /*height + padding-top=10vh - tyle ile pozostałe ikony mają wysokości. Dzięki temu tekst jest w środku ikony*/
+		color: #fff;
+		padding: 0.7vh 1vw 0vh 3vw;
+		margin: 0;
+		margin-bottom: 0.7vh;
+		font-size: 0.8em;
+		color: #fff;
+		background-size: auto 100%;
+		background-repeat: no-repeat;	
+	}
+
+	#main-dot #tab-3 .html {
+		background-image: url(../images/html5-01_white.svg);
+	}
+
+	#main-dot #tab-3 .css {
+		background-image: url(../images/css3-01_white.svg);
+	}
+
+	#main-dot #tab-3 .js {
+		background-image: url(../images/prog-js01_white.svg);
+	}
+
+	#main-dot #tab-3 .jquery {
+		background-image: url(../images/prog-jquery_white.svg);
+	}
+
+	#main-dot #tab-3 .rwd {
+		background-image: url(../images/responsive-design_white.svg);
+	}
+
+	#main-dot #tab-3 .ps {
+		background-image: url(../images/Adobe_Photoshop_CS6_icon_white.svg);
+	}
+
+	#main-dot #tab-3 .bootstrap {
+		background-image: url(../images/rus-vk-01_white.svg);
+	}
+
+	#main-dot #tab-3 .joomla {
+		background-image: url(../images/prog-joomla_white.svg);
+	}	
+
+	#main-dot #tab-3 p {
+		padding-bottom: 1.5em;
+		font-size: 1em;
+		font-weight: 300;
+		line-height: 1.3em;
+		color: #fff;
+		text-align: center;
+		margin: 0;
+	}
+
+	#main-dot #tab-3 p a {
+		color: #fff;
+		text-decoration: underline;
+		font-weight: 300;
+	}
+
+	#main-dot #tab-3 p a:visited {
+		color: #fff;
+	}
+
+	#main-dot #tab-3 p a:hover {
+    	
+    	color: #122043;
+	}
+
+	/*-------PORTFOLIO & CONTACT-------*/
+	#main-dot #tab-5 .contact-1st {
+		background-image: url(../images/mail_white.svg);
+	} 
+
+	#main-dot #tab-5 .contact-2nd {
+		background-image: url(../images/phone_white.svg);
+	} 
+
+	#main-dot #tab-5 .contact-3rd {
+		background-image: url(../images/linkedin_white.svg);
+	} 
+
+	#main-dot #tab-4 .contact-4th,
+	#main-dot #tab-5 .contact-4th {
+		background-image: url(../images/github_white.svg);
+	} 
+
+	#main-dot #tab-4 .contact-5th,
+	#main-dot #tab-5 .contact-5th {
+		background-image: url(../images/codepen_white.svg);
+	}
+	
+	/*-------PORTFOLIO-------*/
+	#main-dot #tab-4 {
+		position: relative;
+		padding-top: 40%;
+	}
+
+	#main-dot #tab-4 p {
+		width: 85%;
+		font-size: 1em;
+		line-height: 1.2em;
+		color: #fff;
+		position: relative;
+		margin: 0 auto;
+	}
+
+	#main-dot #tab-4 a {
+		color: #fff;
+		text-decoration: underline;
+	}
+
+	#main-dot #tab-4 a:hover {
+		color: #122043;
+	}
+
+	#main-dot #tab-4 a:visited {
+		color: #fff;
+	}
+
+	#main-dot #tab-4 .contact-4th,
+	#main-dot #tab-4 .contact-5th {
+		height: 5vh;
+		padding: 3vh 0 0 8vw;
+		margin-top: 6vh;
+		width: auto;
+	}
+
+	#main-dot #tab-4 .contact-4th {
+		margin: 6vh auto 0 6vw;
+	}
+
+	#main-dot #tab-4 .contact-5th {
+		margin: 6vh 6vw 0 auto;
+	}
+
+/*-----------CONTACT----------*/
+	#main-dot #tab-5 {
+		width: 100%;
+		height: 100%;
+		position: relative;
+		padding-top: 25%;
+		
+		color: white;
+		font-size: 1em;
+		font-weight: 300;
+		line-height: 1.2em;
+	}
+
+	#tab-5 ul {
+		display: block;
+		width: 70%;
+		overflow: hidden;
+		margin: 0 auto;
+	}
+
+	#main-dot #tab-5 ul .inline-svg {
+		height: 3vh; /*height + paddingtop=10vh - tyle ile 	pozostałeikony mają wysokości. Dzięki temutekst jest w środku ikony*/
+		padding: 1vh 0 0 6vw;
+		margin: 1vh 0 1vh 2vw;
+		font-size: 1.2em;
+		color: #fff;
+	}
+
+	#tab-5 ul .contact-2nd a {
+		color: #fff;
+	}
+
+	#main-dot #tab-5 ul li .contact-3rd,
+	#main-dot #tab-5 ul li .contact-4th,
+	#main-dot #tab-5 ul li .contact-5th {
+		width: 5vh;
+		height: 5vh;
+		margin: 1vh 3vw 2vh 2vw;
+	}
+
+	#tab-5 .contact-form {
+		display: block;
+		width: 70%;
+		padding: 4%;
+		background: transparent;
+		margin: 0 auto;
+	}
+
+	.contact-form h3 {
+    	color: #fff;
+    	font-size: 1.2em;
+    	padding-bottom: 0.5em;
+    	margin-bottom: 1em;
+    	border-bottom: 1px solid #122043;
+	}
+
+	.contact-form .group {
+		position: relative;
+		display: block;
+		padding: 0.3em 0;
+		margin-bottom: 0.3em;
+	}
+
+	.contact-form #mail,
+	.contact-form textarea {
+		color: #fff;
+	}
+	.bar:before,
+	.bar:after {
+  		content:'';
+  		position: absolute;
+  		background: #122043;
+  		-webkit-transition: 0.3s ease all;
+  		-moz-transition: 0.3s ease all;
+  		transition: 0.3s ease all;
+	}
+	.contact-form button {
+		background-color: #122043;
+		color: #fff;
+		width: 50%;
+	}
+}
+
+/*________________________________________________________*/
+
+@media (orientation:landscape) and (min-height: 900px) and (min-width: 1100px)  {
+	#main-dot #tab-2 p {
+		font-size: 0.9em;
+	}
+
+	#main-dot #tab-2{
+		padding-top: 20%;
+	}
+}
+/*________________________________________________________*/
+
+@media (orientation:landscape) and (min-height: 1000px) and (min-width: 1001px)  {
+
+	#foot a img {
+		height: 80%;
+	}
+
+	#nav-tabs #main-dot {
+		max-width: 800px;
+		max-height: 800px;
+	}
+
+	#nav-tabs #flex-container .two-dots {
+		max-width: 200px;
+		max-height: 200px;
+	}
+}
+
+/*________________________________________________________*/
+
+@media (orientation:landscape) and (min-height: 1000px) and (min-width: 1400px) {
+
+	#main {
+		width: 40%;
+		max-width: 600px;
+	}
+
+	#main h1 {
+		font-size: 1.4em;
+	}
+
+	#main p {
+		font-size: 1.2em;
+	}
+
+	header {
+		max-width: 2000px;
+		position: relative;
+		margin: 0 auto;
+	}
+
+	header #back img {
+		height: 100%;
+	}
+	
+	#nav-tabs {
+		max-width: 2000px;
+		position: relative;
+		margin: 0 auto;
+	}
+
+	
+
+	#main-dot .inline-svg {
+		font-size: 1.3em;
+	}
+
+}
+
+/*________________________________________________________*/
+
+@media (orientation:landscape) and (min-height: 1000px) and (min-width: 2500px) {
+
+	.wrapper{
+		max-width: 90%;
+		margin: 0 auto;
+	}
+
+	#main-dot {
+		height: 80vh;
+		width: 80vh;
+		max-width: 1500px;
+		max-height: 1500px;
+	}
+
+	#flex-container #main-dot .nav-dot {
+		width: 65vh;
+		max-width: 1400px;
+	}
+
+}
+
+@media (orientation:landscape) and (min-height: 1000px) and (min-width: 2700px) {
+
+	.wrapper{
+		background-image: none;
+		background-color: rgb(251,251,251);
+	}
+
+}
+
+
+
